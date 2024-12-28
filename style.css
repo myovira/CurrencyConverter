@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:rgb(161, 165, 172);
+}
+
+.converter{
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 5);
+    backdrop-filter: blur(8px);
+    padding: 24px 30px;
+    text-align: center;
+}
+.converter h1{
+
+    font-size: 30px;
+    text-decoration: underline;
+    color: brown;
+    padding-bottom: 40px;
+
+}
+
+.converter .input-converter input,.converter .input-converter select{
+
+    width: 200px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    overflow: hidden;
+    
+}
+.converter .input-converter{
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    margin-block: 20px;
+}
+
+.converter .input-converter:hover{
+    border-color:lightblue;
+    
+}
+.converter .arrow{
+
+transform: rotate(90deg);
+font-size: 40px;
+color: darkblue
+
+}
+.converter .result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+/* Responsive code */
+
+@media screen and (max-width :420px) {
+    .converter{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .converter h1{
+        font-size: 22px;
+    }
+    .converter .input-converter{
+        border: none;
+    }
+    .converter .input-converter input, 
+    .converter .input-converter select{
+
+        border: 1px solid lightgray;
+        margin-block: 4px;
+        width: 100%;
+        
+    }
+    
+}
